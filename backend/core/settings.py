@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_yasg',
     'home.apps.HomeConfig',
     'about.apps.AboutConfig',
     'contactus.apps.ContactusConfig',
