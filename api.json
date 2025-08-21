@@ -1,0 +1,94 @@
+swagger: '2.0'
+info:
+  title: Mini-website API
+  description: This is a test project with Swagger
+  termsOfService: https://www.google.com/policies/terms/
+  contact:
+    email: contact@snippets.local
+  license:
+    name: BSD License
+  version: v1
+host: 127.0.0.1:8000
+schemes:
+- http
+basePath: /
+consumes:
+- application/json
+produces:
+- application/json
+securityDefinitions:
+  Basic:
+    type: basic
+security:
+- Basic: []
+paths:
+  /about/api/v1/:
+    get:
+      operationId: about_api_v1_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+      - about
+    post:
+      operationId: about_api_v1_create
+      description: ''
+      parameters: []
+      responses:
+        '201':
+          description: ''
+      tags:
+      - about
+    parameters: []
+  /api/v1/:
+    get:
+      operationId: api_v1_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: api_v1_create
+      description: ''
+      parameters: []
+      responses:
+        '201':
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: api_v1_delete
+      description: ''
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+    parameters: []
+  /contact/api/v1/:
+    get:
+      operationId: contact_api_v1_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+      - contact
+    put:
+      operationId: contact_api_v1_update
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+      - contact
+    parameters: []
+definitions: {}
